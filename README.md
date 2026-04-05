@@ -709,3 +709,205 @@ O Azure Data Box é um dispositivo físico fornecido pela Microsoft para transfe
 - AzCopy = linha de comando  
 - Storage Explorer = interface gráfica  
 - Azure File Sync = sincronização bidirecional (nuvem + local)
+
+
+---
+
+### 🔐 Identidade, Acesso e Segurança no Azure
+
+No Azure, a gestão de identidade e segurança é feita principalmente pelo Microsoft Entra ID (antigo Azure AD), garantindo controle de acesso e proteção dos recursos.
+
+➡️ Permite autenticação e autorização de usuários e aplicações
+➡️ Centraliza o gerenciamento de identidades
+➡️ Integra com aplicações locais e na nuvem
+
+**🧩 Serviços de Diretório no Azure**
+
+- Microsoft Entra ID (Azure AD)
+➡️ Serviço de identidade baseado em nuvem
+➡️ Usado para autenticação em apps, APIs e serviços do Azure
+➡️ Suporta SSO, MFA e acesso condicional
+
+- Microsoft Entra Domain Services
+➡️ Fornece domínio gerenciado (sem precisar de AD local)
+➡️ Compatível com protocolos tradicionais (LDAP, Kerberos, NTLM)
+➡️ Ideal para aplicações legadas
+➡️ Suporta SSO
+
+---
+
+**🔑 Métodos de Autenticação no Azure**
+
+- MFA (Autenticação Multifator)
+➡️ Exige mais de uma forma de verificação (senha + código, biometria etc.)
+➡️ Aumenta significativamente a segurança
+
+- SSO (Single Sign-On)
+➡️ Permite acessar vários sistemas com um único login
+➡️ Melhora a experiência do usuário
+
+- Autenticação sem senha (Passwordless)
+➡️ Login via biometria, app autenticador ou chave de segurança
+➡️ Reduz riscos de ataques com senha
+
+---
+
+**🌍 Identidades Externas e Convidados**
+
+➡️ Permite convidar usuários externos (parceiros, clientes)
+➡️ Usuários acessam recursos com suas próprias credenciais
+➡️ Muito usado em colaboração entre empresas
+
+👉 Exemplo: compartilhar acesso a um sistema com fornecedor
+
+---
+
+**🛡️ Controle de Acesso no Azure**
+
+- Acesso Condicional (Conditional Access)
+➡️ Define regras de acesso com base em condições
+➡️ Exemplo: exigir MFA fora da empresa ou bloquear acesso por país
+
+- RBAC (Controle baseado em função)
+➡️ Permissões baseadas em papéis (roles)
+
+➡️ Exemplo:
+- Leitor (read-only)
+- Colaborador (criar/editar)
+- Administrador (controle total)
+
+---
+
+**⚠️ Dica de prova:**
+
+- Entra ID = identidade e autenticação no Azure
+- MFA = mais segurança (sempre cobrado)
+- SSO = um login para vários sistemas
+- RBAC = controla “o que o usuário pode fazer”
+- Acesso Condicional = controla “quando e como pode acessar”
+
+
+---
+
+#### 🔐 Autenticação vs Autorização
+
+**Autenticação (Authentication)**  
+➡️ É o processo de verificar **quem você é**  
+➡️ Valida a identidade do usuário  
+
+👉 Exemplo:  
+- Login com usuário e senha  
+- Login com MFA (código no celular)  
+- Login com biometria  
+
+---
+
+**Autorização (Authorization)**  
+➡️ É o processo de verificar **o que você pode acessar**  
+➡️ Define permissões após o login  
+
+👉 Exemplo:  
+- Usuário pode visualizar dados, mas não editar  
+- Usuário pode acessar apenas um módulo do sistema  
+- Administrador tem acesso total  
+
+---
+
+**🎯 Resumo rápido**
+
+- **Autenticação = identidade (quem é você)**  
+- **Autorização = permissão (o que você pode fazer)** 
+
+**⚠️ Dica de prova:**
+
+- Primeiro vem a **autenticação**, depois a **autorização**  
+- No Azure:  
+  - Entra ID → Autenticação  
+  - RBAC → Autorização  
+
+---
+
+**🔐 Modelo de Confiança Zero (Zero Trust)**
+
+O modelo de Confiança Zero é uma abordagem de segurança baseada no princípio de **nunca confiar, sempre verificar**.
+
+➡️ Nenhum usuário, dispositivo ou aplicação é confiável automaticamente  
+➡️ Toda solicitação de acesso deve ser autenticada, autorizada e validada continuamente  
+➡️ O objetivo é reduzir riscos de acessos indevidos e vazamentos de dados  
+
+---
+
+**🧩 Princípios do Zero Trust**
+
+**Verificar explicitamente**  
+➡️ Sempre autenticar e autorizar com base em todos os dados disponíveis  
+➡️ Exemplo: identidade, localização, dispositivo e nível de risco  
+
+**Usar o princípio do menor privilégio**  
+➡️ Conceder apenas o acesso necessário para executar uma tarefa  
+➡️ Evita permissões excessivas  
+
+**Assumir violação**  
+➡️ Considera que um ataque pode acontecer ou já aconteceu  
+➡️ Por isso, segmenta acessos e monitora continuamente  
+
+**☁️ Zero Trust no Azure**
+
+➡️ Pode ser aplicado com Microsoft Entra ID, MFA, Acesso Condicional e RBAC  
+➡️ Ajuda a proteger usuários, dispositivos, aplicações e dados  
+➡️ É muito usado em ambientes híbridos e em nuvem  
+
+**⚠️ Dica de prova:**
+
+- **Zero Trust = nunca confiar, sempre verificar**  
+- Mesmo estando “dentro da rede”, o acesso ainda deve ser validado  
+- MFA, RBAC e Acesso Condicional ajudam a implementar esse modelo 
+
+
+---
+
+#### 🛡️ Microsoft Defender para Nuvem
+
+O Microsoft Defender para Nuvem é um serviço que ajuda a proteger recursos no Azure, em ambientes híbridos e até em outras nuvens.
+
+➡️ Fornece gerenciamento de postura de segurança (CSPM)  
+➡️ Oferece proteção contra ameaças (workloads)  
+➡️ Identifica vulnerabilidades e recomenda melhorias de segurança  
+
+---
+
+**🔍 Principais Funcionalidades**
+
+**Gerenciamento de postura de segurança (CSPM)**  
+➡️ Avalia continuamente o ambiente  
+➡️ Gera recomendações para melhorar a segurança  
+➡️ Atribui uma pontuação de segurança (Secure Score)  
+
+**Proteção contra ameaças**  
+➡️ Detecta atividades suspeitas em tempo real  
+➡️ Protege recursos como máquinas virtuais, bancos de dados e containers  
+➡️ Gera alertas de segurança  
+
+---
+
+**☁️ Ambientes Suportados**
+
+➡️ Azure  
+➡️ On-premises (local)  
+➡️ Multicloud (AWS, GCP)  
+
+---
+
+**⚙️ Exemplos de Proteção**
+
+➡️ Detectar tentativa de acesso suspeito a uma VM  
+➡️ Identificar portas abertas indevidamente  
+➡️ Alertar sobre configurações inseguras  
+
+---
+
+**⚠️ Dica de prova:**
+
+- Defender para Nuvem = **segurança + proteção contra ameaças**  
+- Secure Score = mede o nível de segurança do ambiente  
+- Funciona não só no Azure, mas também em ambientes híbridos e multicloud  
