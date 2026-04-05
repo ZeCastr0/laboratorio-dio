@@ -911,3 +911,110 @@ O Microsoft Defender para Nuvem é um serviço que ajuda a proteger recursos no 
 - Defender para Nuvem = **segurança + proteção contra ameaças**  
 - Secure Score = mede o nível de segurança do ambiente  
 - Funciona não só no Azure, mas também em ambientes híbridos e multicloud  
+
+---
+
+## 📘 Módulo 3 – Gerenciamento e Governança Azure
+
+---
+
+
+### 💰 Gerenciamento de Custos no Azure  
+
+####  📊 Fatores que afetam o preço  
+
+**1) Tipo de recursos**  
+➡️ Cada serviço tem um custo diferente (VM, Storage, Banco, etc.)  
+
+**2) Consumo**  
+➡️ Modelo pay-as-you-go (pague pelo uso)  
+➡️ Quanto mais usa, mais paga  
+
+**3) Manutenção**  
+➡️ Atualizações, backups e suporte podem gerar custos adicionais  
+
+**4) Área geográfica (impostos)**  
+➡️ Preço varia por região  
+➡️ Pode incluir impostos locais  
+
+**5) Tráfego de rede**  
+➡️ Entrada geralmente gratuita  
+➡️ Saída de dados (egress) é cobrada  
+
+**6) Assinatura**  
+➡️ Diferentes tipos (gratuita, pay-as-you-go, enterprise)  
+➡️ Podem oferecer descontos ou benefícios  
+
+⚠️ **Dica de prova:**  
+- Custos variam principalmente por **uso, região e tipo de recurso**  
+
+---
+
+####  🛒 Azure Marketplace  
+
+➡️ Plataforma para encontrar, testar, comprar e implantar soluções prontas  
+➡️ Aplicações e serviços de parceiros certificados  
+
+⚠️ **OBS:**  
+- Suporte é do **fornecedor**, não da Microsoft  
+
+---
+
+####  🧮 Calculadora de Preços  
+
+➡️ Ferramenta para estimar custos no Azure  
+➡️ Valores são apenas estimativas (podem variar)  
+
+Configurações comuns:  
+- Região  
+- Camada (tier)  
+- Modelo de cobrança (pay-as-you-go ou reserva)  
+- Suporte  
+- Ofertas/programas  
+- Tipo de assinatura  
+
+⚠️ **Dica de prova:**  
+- Calculadora = **estimativa**, não valor real  
+
+![Calculadora de Preco](image-12.png)
+
+---
+
+####  📉 Calculadora de Custo Total de Propriedade (TCO)  
+
+➡️ Estima economia ao migrar para o Azure  
+➡️ Compara:  
+- Infraestrutura local (on-premises)  
+- Custos na nuvem  
+
+---
+
+####  📈 Gerenciamento de Custos do Azure  
+
+➡️ Permite monitorar e controlar gastos  
+
+Inclui:  
+- Relatórios de cobrança  
+- Análise de custos  
+- Previsão de gastos  
+- Alertas de custo  
+
+---
+
+####  🏷️ Marcas (Tags)  
+
+➡️ Metadados para organizar recursos  
+➡️ Estrutura **nome:valor** (ex: centro-custo:001)  
+
+Benefícios:  
+- Organização lógica  
+- Controle de custos  
+- Relatórios mais detalhados  
+
+⚠️ **OBS:**  
+- Não são obrigatórias  
+- Não são herdadas automaticamente  
+
+⚠️ **Dica de prova:**  
+- Tags = organização + controle de custos  
+
