@@ -1018,3 +1018,98 @@ Benefícios:
 ⚠️ **Dica de prova:**  
 - Tags = organização + controle de custos  
 
+---
+
+---
+
+### 📊 Governança e Conformidade no Azure
+
+A governança no Azure garante que os recursos estejam organizados, seguros, em conformidade e seguindo padrões definidos pela empresa.
+
+---
+
+### 📌 Azure Policy
+
+O Azure Policy ajuda a impor padrões organizacionais e avaliar a conformidade em escala.
+
+➡️ Garante governança e consistência dos recursos  
+➡️ Auxilia na conformidade regulatória, segurança, custos e gerenciamento  
+➡️ Avalia e identifica recursos que não atendem às políticas definidas  
+
+➡️ Possui definições e iniciativas integradas em categorias como:  
+- Armazenamento  
+- Rede  
+- Computação  
+- Segurança (Microsoft Defender)  
+- Monitoramento  
+
+**📊 Status das políticas:**
+- `Compliant` → Em conformidade  
+- `Non-compliant` → Fora de conformidade  
+- `Remediation` → Em processo de correção  
+
+**🧠 Exemplos:**
+- Permitir apenas determinados tipos de máquinas virtuais  
+- Exigir criptografia em contas de armazenamento  
+- Restringir regiões específicas para criação de recursos  
+
+---
+
+### 🔒 Bloqueios de Recursos (Resource Locks)
+
+Os bloqueios protegem os recursos contra exclusão ou modificação acidental.
+
+➡️ Podem ser aplicados em:  
+- Assinatura  
+- Grupo de Recursos  
+- Recursos individuais  
+
+**🔐 Tipos de bloqueio:**
+- `Delete` → Impede exclusão  
+- `ReadOnly` → Impede alterações (somente leitura)
+
+
+![Tipos de bloqueios](image-13.png)
+
+⚠️ Dica de prova:
+- `ReadOnly` é mais restritivo que `Delete`
+
+---
+
+### 🛡️ Portal de Confiança do Serviço
+
+O portal de confiança permite verificar como a Microsoft trata segurança, privacidade e conformidade.
+
+➡️ Exibe certificações, auditorias e padrões seguidos  
+➡️ Mostra como os dados são protegidos no Azure  
+➡️ Útil para compliance (LGPD, ISO, etc.)  
+
+---
+
+### 🧬 Microsoft Purview
+
+O Microsoft Purview é uma solução de governança de dados, risco e conformidade.
+
+➡️ Fornece uma visão unificada dos dados  
+➡️ Funciona com dados locais, multinuvem e SaaS  
+➡️ Ajuda a classificar, mapear e proteger dados  
+
+**🔍 O que é possível fazer:**
+- Identificar onde estão os dados  
+- Controlar quem pode acessar ou alterar dados  
+- Monitorar uso e movimentação de dados  
+
+**🧠 Exemplo:**
+- Saber quem pode alterar uma tabela específica  
+- Visualizar permissões e acessos aos dados  
+
+---
+
+💡 Dica de prova:
+- Azure Policy = regras (governança)  
+- Resource Lock = proteção contra exclusão/edição  
+- Purview = governança de dados  
+- Trust Portal = transparência e compliance  
+
+---
+
