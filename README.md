@@ -1154,7 +1154,12 @@ O Azure oferece diversas ferramentas para gerenciar e implantar recursos, atende
 #### 🌍 Azure Arc
 
 ➡️ Permite gerenciar recursos que estão fora do Azure  
-➡️ Inclui servidores on-premises, outras nuvens (multicloud)  
+➡️ Inclui servidores on-premises, outras nuvens (multicloud) 
+
+🌍 Outras nuvens suportadas
+- Amazon Web Services (AWS)
+- Google Cloud Platform (GCP)
+
 ➡️ Centraliza o gerenciamento como se tudo estivesse no Azure  
 
 💡 Exemplo:
