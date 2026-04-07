@@ -1205,3 +1205,60 @@ O Azure oferece diversas ferramentas para gerenciar e implantar recursos, atende
 - Azure Arc = gerenciar fora do Azure  
 
 ---
+
+
+---
+
+### Ferramentas de Monitoramento do Azure
+
+No Azure, as principais ferramentas de monitoramento cobradas no AZ-900 são o **Azure Advisor**, a **Integridade do Serviço do Azure (Azure Service Health)** e o **Azure Monitor**.
+
+#### Azure Advisor
+
+O **Azure Advisor** é como um assistente digital da nuvem. Ele analisa os recursos implantados no Azure e faz recomendações com base em boas práticas para otimizar o ambiente.
+
+Ele atua em **5 áreas principais**:
+
+- **Confiabilidade**
+- **Segurança**
+- **Desempenho**
+- **Custo**
+- **Excelência Operacional**
+
+#### Integridade do Serviço do Azure
+
+A **Integridade do Serviço do Azure (Azure Service Health)** é um conjunto de serviços que mantém você informado sobre problemas e eventos que podem afetar o Azure e também os seus recursos específicos.
+
+Ela fornece informações sobre:
+
+- **Incidentes**
+- **Manutenções planejadas**
+- **Avisos de integridade**
+
+Dentro desse contexto, existe também o **Azure Status**, que mostra uma **visão global** da integridade dos serviços do Azure em todas as regiões.
+
+#### Azure Monitor
+
+O **Azure Monitor** é a ferramenta usada para coletar, analisar e agir com base em dados de telemetria.
+
+Ele ajuda a maximizar a disponibilidade e o desempenho de aplicações e serviços, monitorando ambientes em nuvem e também ambientes locais ou híbridos.
+
+Com o Azure Monitor, é possível acompanhar dados como:
+
+- **Métricas**
+- **Logs**
+- **Eventos**
+- **Rastreamentos**
+
+---
+
+### Dica para prova
+
+A diferença entre eles costuma cair bastante:
+
+- **Azure Advisor** = faz **recomendações**
+- **Azure Service Health** = mostra **problemas e manutenções que afetam seus recursos**
+- **Azure Status** = mostra o **status global do Azure**
+- **Azure Monitor** = coleta e analisa **telemetria, métricas e logs**
+
+---
