@@ -1028,7 +1028,7 @@ A governança no Azure garante que os recursos estejam organizados, seguros, em 
 
 ---
 
-### 📌 Azure Policy
+#### 📌 Azure Policy
 
 O Azure Policy ajuda a impor padrões organizacionais e avaliar a conformidade em escala.
 
@@ -1055,7 +1055,7 @@ O Azure Policy ajuda a impor padrões organizacionais e avaliar a conformidade e
 
 ---
 
-### 🔒 Bloqueios de Recursos (Resource Locks)
+#### 🔒 Bloqueios de Recursos (Resource Locks)
 
 Os bloqueios protegem os recursos contra exclusão ou modificação acidental.
 
@@ -1076,7 +1076,7 @@ Os bloqueios protegem os recursos contra exclusão ou modificação acidental.
 
 ---
 
-### 🛡️ Portal de Confiança do Serviço
+#### 🛡️ Portal de Confiança do Serviço
 
 O portal de confiança permite verificar como a Microsoft trata segurança, privacidade e conformidade.
 
@@ -1086,7 +1086,7 @@ O portal de confiança permite verificar como a Microsoft trata segurança, priv
 
 ---
 
-### 🧬 Microsoft Purview
+#### 🧬 Microsoft Purview
 
 O Microsoft Purview é uma solução de governança de dados, risco e conformidade.
 
@@ -1113,3 +1113,90 @@ O Microsoft Purview é uma solução de governança de dados, risco e conformida
 
 ---
 
+---
+
+### ⚙️ Ferramentas de Gerenciamento e Implantação no Azure
+
+O Azure oferece diversas ferramentas para gerenciar e implantar recursos, atendendo desde iniciantes até usuários avançados e automação.
+
+---
+
+### 🧰 Principais Ferramentas
+
+**🌐 Portal do Azure**
+➡️ Interface gráfica (GUI) acessada pelo navegador  
+➡️ Fácil de usar e ideal para iniciantes  
+➡️ Permite criar, gerenciar e monitorar recursos  
+
+---
+
+**💻 Azure PowerShell**
+➡️ Ferramenta de linha de comando baseada em PowerShell  
+➡️ Usada para automação e scripts  
+➡️ Ideal para administradores Windows  
+
+---
+
+**🖥️ Azure CLI (Command Line Interface)**
+➡️ Interface de linha de comando multiplataforma  
+➡️ Funciona em Windows, Linux e Mac  
+➡️ Muito usada para automação e DevOps  
+
+---
+
+**☁️ Azure Cloud Shell**
+➡️ Shell baseado no navegador (rodando no próprio Azure)  
+➡️ Já vem com Azure CLI e PowerShell configurados  
+➡️ Não precisa instalar nada localmente  
+
+---
+
+#### 🌍 Azure Arc
+
+➡️ Permite gerenciar recursos que estão fora do Azure  
+➡️ Inclui servidores on-premises, outras nuvens (multicloud)  
+➡️ Centraliza o gerenciamento como se tudo estivesse no Azure  
+
+💡 Exemplo:
+- Gerenciar um servidor local como se fosse um recurso do Azure  
+
+---
+
+#### 🏗️ Azure Resource Manager (ARM)
+
+➡️ É a camada de gerenciamento do Azure  
+➡️ Permite criar, atualizar e excluir recursos  
+➡️ Organiza recursos por grupos (Resource Groups)  
+
+**📄 ARM Templates**
+➡️ Arquivos no formato JSON  
+➡️ Usados para implantar infraestrutura como código (IaC)  
+➡️ Permitem criar vários recursos de forma automática e padronizada  
+
+---
+
+#### 🧬 Bicep
+
+➡️ Linguagem da Microsoft para definir infraestrutura como código  
+➡️ É uma evolução do ARM Template  
+
+**Vantagens:**
+- Sintaxe mais simples que JSON  
+- Mais fácil de ler e escrever  
+- Compila para ARM Template automaticamente  
+
+💡 Resumo:
+- ARM Template → JSON (mais complexo)  
+- Bicep → mais simples e moderno  
+
+---
+
+💡 Dica de prova:
+- Portal = interface gráfica  
+- CLI / PowerShell = automação  
+- Cloud Shell = terminal no navegador  
+- ARM = gerenciamento + templates  
+- Bicep = versão simplificada do ARM  
+- Azure Arc = gerenciar fora do Azure  
+
+---
