@@ -401,6 +401,9 @@ Plataforma totalmente gerenciada para criar, implantar e dimensionar rapidamente
 #### 🌐 Rede
 
 ---
+
+
+
 ** Rede Virtual (Azure Virtual Network – VNet)**
 
 A VNet é o serviço de rede do Azure que permite criar uma rede privada na nuvem, semelhante a uma rede local (on-premises).
@@ -523,6 +526,14 @@ Exemplos de uso:
 - Acessar aplicações pelo nome ao invés de IP  
 - Comunicação interna entre serviços na rede  
 - Configuração de domínios personalizados  
+
+
+
+- VNet ↔ VNet =	Peering
+- Empresa → Azure	= VPN Gateway
+- Empresa → Azure (privado) =	ExpressRoute
+- Controlar portas	= NSG
+- Serviço Azure dentro da VNet	= Service Endpoint
 
 ---
 
